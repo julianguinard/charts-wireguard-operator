@@ -2,7 +2,7 @@ apiVersion: v2
 name: wireguard-operator
 description: Wireguard kubernetes operator
 type: application
-version: 0.3.0
+version: 0.3.1-rc1
 appVersion: "v2.11.0"
 keywords:
   - wireguard

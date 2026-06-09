@@ -17,6 +17,8 @@ fullnameOverride: ""
 
 logLevel: "info"
 
+# profilingPort: 6060
+
 rbac:
   create: true
 

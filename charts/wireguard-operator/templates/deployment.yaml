@@ -36,6 +36,9 @@ spec:
         - --metrics-bind-address=:8080
         - --leader-elect
         - --agent-image={{ .Values.agentImage.repository }}:{{ .Values.agentImage.tag | default .Chart.AppVersion }}
+        {{- if .Values.profilingPort }}
+        - --profiling-port=:{{ .Values.profilingPort }}
+        {{- end }}
         {{- range .Values.extraArgs }}
         - {{ . }}
         {{- end }}
